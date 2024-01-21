@@ -19,6 +19,20 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="brand">
+        <div class="brand-logo">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="brand-title">
+          <span>Machine Counter<sub>V1</sub></span>
+        </div>
+      </div>
+      <nav>
+        <button class="Open_modal button">Open Modal</button>
+        <button class="Change_theme button">Change Theme</button>
+      </nav>
+    </header>
     <div class="display">
       <div class="container-display">
         <h1>Conuter</h1>
@@ -29,6 +43,34 @@
         <button class="button" id="increase">Increase</button>
         <button class="button" id="reset">Reset</button>
       </div>
+    </div>
+    <div class="modal" id="modal">
+      <button class="container-close">
+        <span class="close">&times;</span>
+      </button>
+      <form class="form">
+        <legend>Setings</legend>
+        <label for="label-Increase">Increase</label>
+        <input
+          type="text"
+          value="1"
+          id="label-Increase"
+          pattern="^[1-9]\d*$"
+          required
+        />
+        <label for="label-decrement">Decrement</label>
+        <input
+          type="text"
+          value="1"
+          id="label-Decrement"
+          pattern="^[1-9]\d*$"
+          required
+        />
+        <div class="container-button">
+          <input type="submit" class="button" id="submitButton" />
+          <input type="reset" class="button" />
+        </div>
+      </form>
     </div>
     <footer class="footer">
       <div class="social">
